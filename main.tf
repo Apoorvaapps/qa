@@ -13,8 +13,8 @@ provider "azurerm" {
 
 # resource group
 resource "azurerm_resource_group" "default" {
-  location = var.resource_group_location
-  name     = var.resource_group_name
+  resource_group_location = var.resource_group_location
+  resource_group_name     = var.resource_group_name
   #location = "centralindia"
   #name     = "rg-terraformcloudtest"
 }
