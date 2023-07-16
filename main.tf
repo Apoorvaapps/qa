@@ -108,8 +108,8 @@ resource "azurerm_postgresql_flexible_server" "default" {
   version                = "13"
   #delegated_subnet_id    = azurerm_subnet.default["subnet-1"].id
   private_dns_zone_id    = azurerm_private_dns_zone.default.id
-  administrator_login    = var.admin_username
-  administrator_password = var.admin_password
+  administrator_login    = var.postgreadmin_username
+  administrator_password = var.postgreadmin_password
   zone                   = "1"
   storage_mb             = 32768
   sku_name               = "GP_Standard_D2s_v3"
