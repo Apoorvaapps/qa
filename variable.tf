@@ -24,26 +24,26 @@ variable "subnet_prefix" {
    }
 }
 
-variable "vmadmin_username" {
+variable "admin_username" {
   type        = string
   description = "The administrator username of the SQL logical server."
   #default    = "vmuser123"
 }
 
-variable "vmadmin_password" {
+variable "admin_password" {
   type        = string
   description = "The administrator password of the SQL logical server."
   sensitive   = true
   #default    = "password@768954"
 }
 
-variable "postgreadmin_username" {
+variable "administrator_login" {
   type        = string
   description = "The administrator username of the SQL logical server."
   #default     = "postgreadmin123"
 }
 
-variable "postgreadmin_password" {
+variable "administrator_password" {
   type        = string
   description = "The administrator password of the SQL logical server."
   sensitive   = true
